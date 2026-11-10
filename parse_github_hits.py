@@ -5,7 +5,7 @@ import os
 import json
 
 <<<<<<< HEAD
-TOKEN = "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"
+TOKEN = "YOUR_TOKEN_HERE"
 =======
 TOKEN = "YOUR_GITHUB_TOKEN"
 >>>>>>> 39f90d6 (chore: sanitize hardcoded tokens and update core OSINT modules)
