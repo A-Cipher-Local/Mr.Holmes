@@ -58,7 +58,11 @@ TARGET_MAP = {
     ]
 }
 
+<<<<<<< HEAD
 TOKEN = "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"
+=======
+TOKEN = "YOUR_GITHUB_TOKEN"
+>>>>>>> 39f90d6 (chore: sanitize hardcoded tokens and update core OSINT modules)
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) OSINT-Tool/1.0",
