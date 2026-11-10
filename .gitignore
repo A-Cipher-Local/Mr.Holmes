@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+*.db
+*.pcap
+*.tar.gz
+*.gexf
+GUI/Reports/
+intel_cache/
