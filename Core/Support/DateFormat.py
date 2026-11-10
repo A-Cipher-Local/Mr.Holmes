@@ -14,6 +14,7 @@ class Get:
 
     @staticmethod
     def Format():
+        localformat = ""
         Config_file = "Configuration/Configuration.ini"
         Parser = ConfigParser()
         Parser.read(Config_file)

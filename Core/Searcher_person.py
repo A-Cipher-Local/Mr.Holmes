@@ -110,7 +110,7 @@ class info:
             print(Font.Color.BLUE + "\n[I]" + Font.Color.WHITE +
                   Language.Translation.Translate_Language(filename, "Default", "Delete", "None").format(username))
         else:
-            os.mkdir(folder)
+            os.makedirs(folder, exist_ok=True)
         choice = int(input(
             Font.Color.BLUE + "\n[?]" + Font.Color.WHITE + Language.Translation.Translate_Language(filename, "Default", "choice", "None") + Font.Color.GREEN + "[#MR.HOLMES#]" + Font.Color.WHITE + "-->"))
         if choice == 1:
@@ -121,7 +121,7 @@ class info:
             content = access.read()
             final = json.loads(content)
             identity = Language.Translation.Translate_Language(
-                filename, "Default", "ProxyLoc", "None").format(final["regionName"], final["country"])
+                filename, "Default", "ProxyLoc", "None").format(final.get("regionName", "Unknown"), final.get("country", "Unknown"))
 
         else:
             http_proxy = None
